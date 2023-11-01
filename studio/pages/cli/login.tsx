@@ -44,7 +44,11 @@ const CliLoginPage: NextPage = () => {
     <APIAuthorizationLayout>
       <div>
         <div className={`flex items-center justify-center h-full`}>
-          {isSuccessfulLogin ? 'Well done! Now close this window, go back to your terminal and hack away!' : <Connecting /> }
+          {isSuccessfulLogin ? (
+            'Well done! Now close this window, go back to your terminal and hack away!'
+          ) : (
+            <Connecting />
+          )}
         </div>
       </div>
     </APIAuthorizationLayout>
